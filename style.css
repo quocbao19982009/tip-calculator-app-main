@@ -1,0 +1,324 @@
+/* --------------------------------------CSS Reset--------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------------Starting CSS---------------------- */
+:root{
+--Strong-cyan: hsl(172, 67%, 45%);
+--Very-dark-cyan: hsl(183, 100%, 15%);
+--Dark-grayish-cyan1: hsl(186, 14%, 43%);
+--Dark-grayish-cyan: hsl(184, 14%, 56%);
+--main-background: hsl(185, 41%, 84%);
+--Light-grayish-cyan: hsl(189, 41%, 97%);
+--white: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;  
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(185deg 41% 84%);
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    padding:3rem 0;
+    align-self: center;
+}
+
+.wraper {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+}
+.bill h2 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color:hsl(184, 14%, 56%)
+}
+.bill div {
+    position: relative;
+}
+.bill svg{
+    
+    font-size: 3rem;
+    position: absolute;
+    top: 16px ;
+    left: 20px;
+}
+.bill input {
+    direction:rtl;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+}
+
+.bill {
+    margin-bottom: 2rem;
+}
+
+.tips span{
+    font-weight: 700;
+    color:hsl(184, 14%, 56%)
+}
+.percent {
+    margin-top: 1rem;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+
+}
+.percent button {
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    border-radius: 5px;
+    height: 55px;
+    font-size: 1.35rem;
+    border:none;
+}
+
+.percent button:focus{
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%)
+}
+
+#cus {
+    background-color: hsl(189, 41%, 97%);
+    padding:10px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    border-radius: 5px;
+    height: 55px;
+    font-size: 1.35rem;
+    border:none;
+    text-align: center;
+}
+
+
+#cus::placeholder {
+    font-size: 1.5rem;
+}
+
+.people {
+    margin-top: 2rem;
+    
+}
+.people h2 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color:hsl(184, 14%, 56%)
+}
+.people div {
+    position: relative;
+}
+.people svg{
+    
+    font-size: 3rem;
+    position: absolute;
+    top: 16px ;
+    left: 20px;
+}
+.people input {
+    direction:rtl;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+}
+
+input {
+    font-size: 24px;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    height: 3rem;
+    font-weight: 700;
+}
+
+
+
+.result {
+    background-color: hsl(183, 100%, 15%);
+    margin-top: 1rem;
+    height: 200px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 250px;
+    margin-top: 30px;
+    
+}
+
+.result div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.output{
+    font-size:40px;
+    color:hsl(172, 67%, 45%);
+    font-weight: 700;
+}
+
+h3 {
+    padding-top: 10px;
+    color: white;
+}
+h3 span {
+    display: block;
+    font-size: 12px;
+    color:hsl(184, 14%, 56%);
+    padding:5px;
+}
+
+.btn-reset {
+    width: 100%;
+    background-color: hsl(183, 50%, 31%);
+    color: hsl(184, 84%, 20%);
+    height: 40px;
+    font-size: 1.25rem;
+    border: 0}
+
+.resetActive {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+    
+#people-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#zero_ppl {
+    color: red;
+}
+.hide{
+    display:none;
+}
+    .attribution {
+margin-top: 100px;
+    }
+
+.active {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+    button:hover{
+        cursor: pointer;
+    }
+    input:hover{
+        border: 1px solid hsl(172, 67%, 45%);
+    }
+    input:focus{
+        outline:2px solid hsl(172, 67%, 45%) ;
+        border: 2px solid var(--strong-cyan);
+    }
+
+ .input_zero:focus  {
+    outline:2px solid red ;
+}
+
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    }
+
+    @media (min-width: 786px) {
+
+        body {
+            height: 100%;
+        }
+            
+       
+        .wraper{
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            width: min(70%, 900px)
+            
+        }
+        .input{
+            width:50%;
+            display: flex;
+        flex-direction: column;
+       
+           }
+        .percent {
+            margin-top: 1rem;
+           display: grid ;
+           grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1rem;
+        
+        }
+        .input {
+            margin-right: 2rem;
+            
+    }
+        .result {
+            height: auto;
+            width:50%;
+            margin-top: 0;
+        }
+.result button {
+    margin-top: 50px;
+}
+}
+
